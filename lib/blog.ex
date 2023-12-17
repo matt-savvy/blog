@@ -1,18 +1,13 @@
 defmodule Blog do
-  @moduledoc """
-  Documentation for `Blog`.
-  """
+  alias Blog.Post
 
-  @doc """
-  Hello world.
+  use NimblePublisher,
+    build: Post,
+    from: "./posts/**/*.md",
+    as: :posts,
+    highlighters: [:makeup_elixir, :makeup_erlang]
 
-  ## Examples
+  @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
 
-      iex> Blog.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  def all_posts, do: @posts
 end
