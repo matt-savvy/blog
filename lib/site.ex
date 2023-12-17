@@ -4,9 +4,10 @@ defmodule Blog.Site do
   alias Phoenix.Template
 
   @output_dir "./output"
-  File.mkdir_p!(@output_dir)
 
   def build do
+    File.mkdir_p!(@output_dir)
+
     posts = Blog.all_posts()
     render_file("index.html", "index", %{posts: posts})
 
