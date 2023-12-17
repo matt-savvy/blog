@@ -3,6 +3,8 @@ defmodule Blog.Site do
   import Phoenix.HTML
   alias Phoenix.Template
 
+  embed_templates("templates/*")
+
   @output_dir "./output"
 
   def build do
@@ -29,37 +31,5 @@ defmodule Blog.Site do
     output = Path.join([@output_dir, path])
 
     File.write!(output, safe)
-  end
-
-  def post(assigns) do
-    ~H"""
-    <.layout>
-      <%= raw @post.body %>
-    </.layout>
-    """
-  end
-
-  def index(assigns) do
-    ~H"""
-    <.layout>
-      <h1>Blog</h1>
-      <h2>Posts</h2>
-      <ul>
-        <li :for={post <- @posts}>
-          <a href={post.path}> <%= post.title %> </a>
-        </li>
-      </ul>
-    </.layout>
-    """
-  end
-
-  def layout(assigns) do
-    ~H"""
-    <html>
-      <body>
-        <%= render_slot(@inner_block) %>
-      </body>
-    </html>
-    """
   end
 end
