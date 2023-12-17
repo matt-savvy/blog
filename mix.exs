@@ -21,7 +21,8 @@ defmodule Blog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:nimble_publisher, "~> 0.1.3"}
+      {:nimble_publisher, "~> 0.1.3"},
+      {:phoenix_live_view, "~> 0.18"}
     ]
   end
 end
