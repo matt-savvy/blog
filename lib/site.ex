@@ -14,6 +14,8 @@ defmodule Blog.Site do
     posts = Blog.all_posts()
     render_file("index.html", "index", %{posts: posts})
 
+    generate_makeup_stylesheet()
+
     for post <- posts do
       dir = Path.dirname(post.path)
       File.mkdir_p!(Path.join([@output_dir, dir]))
@@ -21,6 +23,15 @@ defmodule Blog.Site do
     end
 
     :ok
+  end
+
+  def generate_makeup_stylesheet do
+    File.mkdir_p!(Path.join([@output_dir, "assets"]))
+    css_path = Path.join([@output_dir, "assets", "app.css"])
+
+    Makeup.Styles.HTML.StyleMap.paraiso_dark_style()
+    |> Makeup.stylesheet()
+    |> then(&File.write!(css_path, &1))
   end
 
   def render_file(path, template, assigns) do
