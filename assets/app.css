@@ -7,3 +7,9 @@ body {
     padding: .5em;
     overflow-y: auto;
 }
+
+body > p > code, body > h2 > code {
+    background-color: lightgray;
+    padding-left: .25em;
+    padding-right: .25em;
+}
