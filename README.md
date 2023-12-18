@@ -1,21 +1,19 @@
 # Blog
 
-**TODO: Add description**
+A simple static site generator to convert my articles from markdown to html.
 
-## Installation
+## Development
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `blog` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:blog, "~> 0.1.0"}
-  ]
-end
+Install the deps, run the initial build and start the watcher.
+```
+mix deps.get
+mix build
+./watcher.sh
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/blog>.
+Then, in another terminal, fire up a python server
+```
+cd output
+python3 -m http.server 8000
+```
 
