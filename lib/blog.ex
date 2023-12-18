@@ -13,7 +13,8 @@ defmodule Blog do
       :makeup_html,
       :makeup_js,
       :makeup_json
-    ]
+    ],
+    earmark_options: %Earmark.Options{smartypants: false}
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
 
