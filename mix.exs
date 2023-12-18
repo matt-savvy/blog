@@ -22,6 +22,12 @@ defmodule Blog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:makeup_diff, "~> 0.1"},
+      {:makeup_eex, "~> 0.1"},
+      {:makeup_elixir, "~> 0.16"},
+      {:makeup_html, "~> 0.1"},
+      {:makeup_js, "~> 0.1"},
+      {:makeup_json, "~> 0.1"},
       {:nimble_publisher, "~> 0.1.3"},
       {:phoenix_live_view, "~> 0.18"},
       {:tailwind, "~> 0.1.8"}

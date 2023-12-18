@@ -5,7 +5,15 @@ defmodule Blog do
     build: Post,
     from: "./posts/**/*.md",
     as: :posts,
-    highlighters: [:makeup_elixir, :makeup_erlang]
+    highlighters: [
+      :makeup_elixir,
+      :makeup_diff,
+      :makeup_eex,
+      :makeup_elixir,
+      :makeup_html,
+      :makeup_js,
+      :makeup_json
+    ]
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
 
