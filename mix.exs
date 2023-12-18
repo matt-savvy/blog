@@ -28,7 +28,7 @@ defmodule Blog.MixProject do
       {:makeup_html, "~> 0.1"},
       {:makeup_js, "~> 0.1"},
       {:makeup_json, "~> 0.1"},
-      {:nimble_publisher, "~> 0.1.3"},
+      {:nimble_publisher, "~> 1.0"},
       {:phoenix_live_view, "~> 0.18"}
     ]
   end
