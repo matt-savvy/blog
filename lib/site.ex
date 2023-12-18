@@ -6,10 +6,12 @@ defmodule Blog.Site do
 
   embed_templates("templates/*")
 
+  @assets_dir "./assets"
   @output_dir "./output"
 
   def build do
     File.mkdir_p!(@output_dir)
+    copy_assets()
 
     posts = Blog.all_posts()
     render_file("index.html", "index", %{posts: posts})
@@ -29,5 +31,9 @@ defmodule Blog.Site do
     output = Path.join([@output_dir, path])
 
     File.write!(output, safe)
+  end
+
+  def copy_assets do
+    File.cp_r!(@assets_dir, Path.join([@output_dir, "assets"]))
   end
 end
