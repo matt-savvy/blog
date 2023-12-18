@@ -14,6 +14,7 @@ defmodule Blog do
       :makeup_js,
       :makeup_json
     ],
+    html_converter: Blog.HTMLConverter,
     earmark_options: %Earmark.Options{smartypants: false}
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
