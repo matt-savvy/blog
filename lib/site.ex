@@ -15,11 +15,7 @@ defmodule Blog.Site do
 
     for post <- posts do
       dir = Path.dirname(post.path)
-
-      if dir != "." do
-        File.mkdir_p!(Path.join([@output_dir, dir]))
-      end
-
+      File.mkdir_p!(Path.join([@output_dir, dir]))
       render_file(post.path, "post", %{post: post})
     end
 
