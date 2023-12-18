@@ -5,15 +5,6 @@ defmodule Blog do
     build: Post,
     from: "./posts/**/*.md",
     as: :posts,
-    highlighters: [
-      :makeup_elixir,
-      :makeup_diff,
-      :makeup_eex,
-      :makeup_elixir,
-      :makeup_html,
-      :makeup_js,
-      :makeup_json
-    ],
     html_converter: Blog.HTMLConverter,
     earmark_options: %Earmark.Options{smartypants: false}
 
