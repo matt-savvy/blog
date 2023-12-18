@@ -1,6 +1,7 @@
 defmodule Blog.Site do
-  use Phoenix.Component
-  import Phoenix.HTML
+  import Phoenix.HTML, only: [raw: 1]
+  import Phoenix.Template, only: [embed_templates: 1]
+
   alias Phoenix.Template
 
   embed_templates("templates/*")
@@ -22,8 +23,9 @@ defmodule Blog.Site do
     :ok
   end
 
-  def render_file(path, template, assign) do
-    safe = Template.render_to_iodata(__MODULE__, template, "html", assign)
+  def render_file(path, template, assigns) do
+    assigns = Map.merge(assigns, %{layout: {__MODULE__, "layout"}})
+    safe = Template.render_to_iodata(__MODULE__, template, "html", assigns)
     output = Path.join([@output_dir, path])
 
     File.write!(output, safe)
