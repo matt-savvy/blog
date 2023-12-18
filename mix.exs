@@ -29,14 +29,13 @@ defmodule Blog.MixProject do
       {:makeup_js, "~> 0.1"},
       {:makeup_json, "~> 0.1"},
       {:nimble_publisher, "~> 0.1.3"},
-      {:phoenix_live_view, "~> 0.18"},
-      {:tailwind, "~> 0.1.8"}
+      {:phoenix_live_view, "~> 0.18"}
     ]
   end
 
   defp aliases do
     [
-      "site.build": ["build", "tailwind default --minify"]
+      "site.build": ["build"]
     ]
   end
 end
