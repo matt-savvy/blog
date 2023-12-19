@@ -24,3 +24,6 @@ blog-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Generated content
+output
