@@ -13,6 +13,8 @@ defmodule Blog.Site do
     File.mkdir_p!(@output_dir)
     copy_assets()
 
+    render_file("about.html", "about")
+
     posts = Blog.all_posts()
     render_file("index.html", "index", %{posts: posts})
 
@@ -25,7 +27,7 @@ defmodule Blog.Site do
     :ok
   end
 
-  def render_file(path, template, assigns) do
+  def render_file(path, template, assigns \\ %{}) do
     assigns = Map.merge(assigns, %{layout: {__MODULE__, "layout"}})
     safe = Template.render_to_iodata(__MODULE__, template, "html", assigns)
     output = Path.join([@output_dir, path])
