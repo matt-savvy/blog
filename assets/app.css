@@ -1,6 +1,9 @@
 body {
     margin-left: 25%;
     margin-right: 25%;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .highlight {
@@ -12,4 +15,9 @@ body > p > code, body > h2 > code {
     background-color: lightgray;
     padding-left: .25em;
     padding-right: .25em;
+}
+
+footer {
+    padding: 1em;
+    margin-top: auto;
 }
