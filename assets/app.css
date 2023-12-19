@@ -21,3 +21,7 @@ footer {
     padding: 1em;
     margin-top: auto;
 }
+
+.post-details {
+    font-style: italic;
+}
