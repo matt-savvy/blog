@@ -22,7 +22,10 @@ defmodule Blog.Post do
 
   def build(filename, attrs, body) do
     {path, date, id} = parse_filename(filename)
-    struct!(__MODULE__, [id: id, date: date, body: body, path: path] ++ Map.to_list(attrs))
+
+    attrs
+    |> Map.merge(%{id: id, date: date, body: body, path: path})
+    |> then(&struct!(__MODULE__, &1))
   end
 
   defp parse_filename(filename) do
