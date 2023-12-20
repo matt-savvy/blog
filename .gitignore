@@ -27,3 +27,6 @@ blog-*.tar
 
 # Generated content
 output
+
+# act generated content
+out

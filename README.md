@@ -17,3 +17,10 @@ cd output
 python3 -m http.server 8000
 ```
 
+
+### Running GHA Locally
+
+```
+nix-shell -p act
+ACTIONS_RUNTIME_URL=http://host.docker.internal:4322/ act --artifact-server-addr "[::0]" --artifact-server-port 4322 --artifact-server-path out
+```
