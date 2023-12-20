@@ -1,6 +1,14 @@
 body {
-    margin-left: 25%;
-    margin-right: 25%;
+    @media (min-width: 600px) {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    @media (max-width: 600px) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     min-height: 95vh;
     display: flex;
     flex-direction: column;
