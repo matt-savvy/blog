@@ -23,9 +23,23 @@ jobs:
         with:
           otp-version: '25.3.2.8'
           elixir-version: '1.14.5'
-      - run: |
+
+      - name: Cache
+        id: cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            deps
+            _build
+            .mix/archives/
+          key: ${{hashFiles('mix.lock')}}
+
+      - name: Get deps & compile
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
           mix local.hex --force --if-missing
           mix deps.get
+          mix
 
       - name: Build Site
         run: mix build
