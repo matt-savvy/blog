@@ -20,7 +20,6 @@ body {
 }
 
 body > p > code, body > h2 > code {
-    background-color: lightgray;
     padding-left: .25em;
     padding-right: .25em;
 }
@@ -32,4 +31,41 @@ footer {
 
 .post-details {
     font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* default dark color scheme, taken from nightfox theme */
+body {
+    background-color: #192330;
+    color: #cdcecf;
+    p > code, h2 > code {
+        background-color: #2b3b51;
+    }
+}
+a {
+    color: #86abdc;
+}
+a:visited {
+    color: #9d79d6;
+}
+
+
+/* opt-in light color scheme, taken from dayfox theme */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f6f2ee;
+        color: #3d2b5a;
+        p > code, h2 > code {
+            background-color: #e7d2be;
+        }
+    }
+    a {
+        color: #287980;
+    }
+    a:visited {
+        color: #6e33ce;
+    }
 }
