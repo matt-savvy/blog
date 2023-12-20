@@ -37,35 +37,33 @@ a {
     text-decoration: none;
 }
 
-/* default dark color scheme, taken from nightfox theme */
 body {
-    background-color: #192330;
-    color: #cdcecf;
+    /* default/dark color scheme, taken from nightfox theme */
+    --bg: #192330;
+    --fg: #cdcecf;
+    --snippet: #2b3b51;
+    --keyword: #86abdc;
+    --fn: #9d79d6;
+
+    /* opt-in light color scheme, taken from dayfox theme */
+    @media (prefers-color-scheme: light) {
+        --bg: #f6f2ee;
+        --fg: #3d2b5a;
+        --snippet: #e7d2be;
+        --keyword: #287980;
+        --fn: #6e33ce;
+    }
+
+
+    background-color: var(--bg);
+    color: var(--fg);
     p > code, h2 > code {
-        background-color: #2b3b51;
+        background-color: var(--snippet);
     }
 }
 a {
-    color: #86abdc;
+    color: var(--keyword);
 }
 a:visited {
-    color: #9d79d6;
-}
-
-
-/* opt-in light color scheme, taken from dayfox theme */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #f6f2ee;
-        color: #3d2b5a;
-        p > code, h2 > code {
-            background-color: #e7d2be;
-        }
-    }
-    a {
-        color: #287980;
-    }
-    a:visited {
-        color: #6e33ce;
-    }
+    color: var(--fn);
 }
