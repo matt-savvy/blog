@@ -35,7 +35,6 @@ jobs:
           key: ${{hashFiles('mix.lock')}}
 
       - name: Get deps & compile
-        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           mix local.hex --force --if-missing
           mix deps.get
