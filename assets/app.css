@@ -49,6 +49,8 @@ body {
     --keyword: #86abdc;
     --fn: #9d79d6;
 
+    scrollbar-color: var(--snippet) #192330;
+
     /* opt-in light color scheme, taken from dayfox theme */
     @media (prefers-color-scheme: light) {
         --bg: #f6f2ee;
@@ -56,8 +58,8 @@ body {
         --snippet: #e7d2be;
         --keyword: #287980;
         --fn: #6e33ce;
+        scrollbar-color: inherit;
     }
-
 
     background-color: var(--bg);
     color: var(--fg);
