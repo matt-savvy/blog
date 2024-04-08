@@ -2,6 +2,11 @@
 
 A simple static site generator to convert my articles from markdown to html.
 
+Create a new post using ./new_post.sh
+```
+./new_post.sh A day in the life
+```
+
 ## Development
 
 Install the deps, run the initial build and start the watcher.
