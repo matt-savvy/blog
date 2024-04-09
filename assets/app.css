@@ -18,6 +18,10 @@ body {
     flex-direction: column;
 }
 
+img {
+    max-width: 100%;
+}
+
 .highlight {
     padding: .5em;
     overflow-y: auto;
