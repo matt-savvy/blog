@@ -1,3 +1,3 @@
-while inotifywait -q --recursive --event modify --exclude "build|output|.git|watcher.sh" .; do
+while inotifywait -q --recursive --event modify --include "posts|lib|assets" .; do
     mix build
 done
