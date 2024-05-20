@@ -135,7 +135,7 @@ def start_test_supervisor(_) do
 end
 ```
 
-We start `TestSupervisor` using `start_supervised!` here because it guarantees us that the process will to exit before the next test starts.
+We start `TestSupervisor` using `start_supervised!` here because it guarantees us that the process will exit before the next test starts.
 This way, as long as any tests starting presentations are not using `async: true`, every test gets a `DynamicSupervisor` with a clean slate.
 
 We add these to our relevant tests with `setup_all :set_env_test_supervisor` and `setup :start_test_supervisor`.
