@@ -37,7 +37,7 @@ Display content of just register `a`
 :reg a
 ```
 
-Display content of registers `a`, `b`, `c`, `1`, `2`, and `3`
+Display content of registers `a`, `b`, `c`, `1`, `2`, `3`, and the unnamed register (`"`)
 ```
 :reg abc123"
 ```
@@ -45,7 +45,9 @@ Display content of registers `a`, `b`, `c`, `1`, `2`, and `3`
 ### Working With Specific Registers
 
 Use `"<register name><operation>`.
-Registers are named `a` to `z` (lowercase only).
+
+You can send yanked, changed, or deleted text to named registers.
+They are named `a` to `z` (lowercase only).
 
 Yank selected text to register `z` (visual mode)
 ```
@@ -65,7 +67,8 @@ Delete a line, sending contents to register `c`.
 ```
 
 Use the uppercase register name to append to the text in the register.
-Delete a word, appending it to the text in register `c`.
+
+Delete a word, appending it to the text in register `c`
 ```
 "Cdaw
 ```
@@ -91,7 +94,7 @@ Register `1` contains the most recent line(s), `2` the next most recent, `3` the
 
 Paste from register `1`
 ```
-"`p
+"1p
 ```
 
 Paste filename
