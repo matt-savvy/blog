@@ -1,10 +1,23 @@
 %{
-  title: "Vim Registers Video Cheet Sheet",
+  title: "Working With Vim Registers | Copy And Paste Better (Video and Cheat Sheet)",
   author: "Matt",
   tags: ~w(vim cheat-sheets),
-  description: "Vim Registers / Video Cheet Sheet"
+  description: "Vim even lets you take copy and pasting code to another level."
 }
 ---
+
+<iframe
+    width="560"
+    height="315"
+    rel="0"
+    src="https://www.youtube.com/embed/QVvrkwipr8g?si=waKzD3H649jKupAq&rel=0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
 
 ## Vim Registers
 TLDR; A register is a place where vim will yank/delete/put text to and from.
