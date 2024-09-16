@@ -77,3 +77,8 @@ a {
 a:visited {
     color: var(--fn);
 }
+
+.embedded-yt {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}

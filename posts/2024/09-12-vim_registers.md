@@ -7,9 +7,7 @@
 ---
 
 <iframe
-    width="560"
-    height="315"
-    rel="0"
+    class="embedded-yt"
     src="https://www.youtube.com/embed/QVvrkwipr8g?si=waKzD3H649jKupAq&rel=0"
     title="YouTube video player"
     frameborder="0"
