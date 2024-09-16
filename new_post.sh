@@ -15,6 +15,3 @@ echo "%{
 }
 ---
 " > $FILENAME
-
-vim $FILENAME
-
