@@ -67,8 +67,11 @@ body {
 
     background-color: var(--bg);
     color: var(--fg);
-    p > code, h2 > code {
+    code {
         background-color: var(--snippet);
+    }
+    pre > code, a > code {
+        background-color: inherit;
     }
 }
 a {
