@@ -7,7 +7,7 @@
 ---
 <iframe
     class="embedded-yt"
-    src="https://www.youtube.com/embed/l-kEyudr6YU?si=fgHpn4-JfOF_1OQ3&rel=0"
+    src="https://www.youtube.com/embed/l-kEyudr6YU?rel=0"
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
