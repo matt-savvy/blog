@@ -16,11 +16,12 @@
 >
 </iframe>
 
-- [`gq` docs](https://neovim.io/doc/user/change.html#gq) or `:h gq`
-- [`<<` docs](https://neovim.io/doc/user/change.html#%3C%3C) or `:h <<`
-- [`=` docs](https://neovim.io/doc/user/change.html#%3D) or `:h =`
 
 ## Cheat Sheet
+
+### Formatting Lines
+
+[`gq` docs](https://neovim.io/doc/user/change.html#gq) or `:h gq`
 
 Format the current line
 ```
@@ -54,6 +55,10 @@ set textwidth=0
 vim.bo.textwidth = 0
 ```
 
+### Shifting
+
+[`<<` docs](https://neovim.io/doc/user/change.html#%3C%3C) or `:h <<`
+
 Shift lines one `shiftwidth` left.
 ```
 <<
@@ -75,6 +80,10 @@ Shift a paragraph one `shiftwidth` left or right.
 >ap
 <ap
 ```
+
+### Indentation
+
+[`=` docs](https://neovim.io/doc/user/change.html#%3D) or `:h =`
 
 Auto-indent selected lines
 ```
