@@ -1,7 +1,7 @@
 body {
     /* desktop */
     @media (min-width: 600px) {
-        font-size: large;
+        font-size: medium;
         margin-left: 25%;
         margin-right: 25%;
     }
