@@ -19,6 +19,11 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
+p {
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+}
+
 img {
     max-width: 100%;
 }
