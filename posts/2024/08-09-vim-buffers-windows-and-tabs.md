@@ -16,9 +16,9 @@
 >
 </iframe>
 
-[Windows Neovim Docs](https://neovim.io/doc/user/windows.html#_1.-introduction)
-
 ## Cheat Sheet
+
+[Windows Neovim Docs](https://neovim.io/doc/user/windows.html#_1.-introduction)
 
 ### Buffers
 

@@ -16,9 +16,9 @@
 >
 </iframe>
 
-[Neovim - Completion](https://neovim.io/doc/user/usr_24.html#24.3)
-
 ## Cheat Sheet
+
+[Neovim - Completion](https://neovim.io/doc/user/usr_24.html#24.3)
 
 Open autocomplete in insert mode
 ```

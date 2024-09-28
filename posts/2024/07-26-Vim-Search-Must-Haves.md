@@ -16,9 +16,9 @@
 >
 </iframe>
 
-[Neovim User Manual - Search Commands And Patterns](https://neovim.io/doc/user/usr_27.html)
-
 ## Cheat Sheet
+
+[Neovim User Manual - Search Commands And Patterns](https://neovim.io/doc/user/usr_27.html)
 
 Search for word under cursor
 ```
