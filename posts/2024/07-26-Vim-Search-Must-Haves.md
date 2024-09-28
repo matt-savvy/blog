@@ -5,10 +5,8 @@
   description: "Some search moves that should be muscle memory for everyone."
 }
 ---
-
 <iframe
-    width="560"
-    height="315"
+    class="embedded-yt"
     src="https://www.youtube.com/embed/jd5m_rg4WmM?rel=0"
     title="YouTube video player"
     frameborder="0"

@@ -5,10 +5,8 @@
   description: "Grep from the ground up. We go from a stock install to dialed-in. "
 }
 ---
-
 <iframe
-    width="560"
-    height="315"
+    class="embedded-yt"
     src="https://www.youtube.com/embed/q-dOcaI87E0?rel=0"
     title="YouTube video player"
     frameborder="0"

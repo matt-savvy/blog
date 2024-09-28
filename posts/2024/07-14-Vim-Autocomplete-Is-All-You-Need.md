@@ -5,10 +5,8 @@
   description: "Vim has autocomplete straight out of the box, and it's all you need."
 }
 ---
-
 <iframe
-    width="560"
-    height="315"
+    class="embedded-yt"
     src="https://www.youtube.com/embed/tFD2Ia5TIQ8?rel=0"
     title="YouTube video player"
     frameborder="0"

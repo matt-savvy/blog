@@ -5,7 +5,6 @@
   description: "Finally, windows you will want to use. See how I juggle buffers, work with windows, and how not to use tabs. "
 }
 ---
-
 <iframe
     class="embedded-yt"
     src="https://www.youtube.com/embed/XRIhRhDj3_c?rel=0"

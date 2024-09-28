@@ -5,7 +5,6 @@
   description: "Vim even lets you take copy and pasting code to another level."
 }
 ---
-
 <iframe
     class="embedded-yt"
     src="https://www.youtube.com/embed/QVvrkwipr8g?rel=0"
