@@ -16,6 +16,7 @@ body {
     min-height: 95vh;
     display: flex;
     flex-direction: column;
+    font-family: "Noto Sans", sans-serif;
 }
 
 img {
