@@ -1,7 +1,7 @@
 %{
   title: "Hot Take - Async collaboration is Overrated",
   author: "Matt",
-  tags: ~w(),
+  tags: ~w(work),
   description: "One of my unpopular opinions, asynchronous collaboration is not so great"
 }
 ---
