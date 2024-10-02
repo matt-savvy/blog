@@ -1,6 +1,5 @@
 <h2>Posts</h2>
-<ul>
-  <li :for={post <- @posts}>
+  <p :for={post <- @posts}>
+    <em class="date"><%= post.date %></em>
     <a href={post.path}> <%= post.title %> </a>
-  </li>
-</ul>
+  </p>
