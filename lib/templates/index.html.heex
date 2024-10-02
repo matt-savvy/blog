@@ -2,4 +2,5 @@
   <p :for={post <- @posts}>
     <em class="date"><%= post.date %></em>
     <a href={post.path}> <%= post.title %> </a>
+    <p><%= post.description %></p>
   </p>
