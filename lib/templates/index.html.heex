@@ -1,6 +1,7 @@
 <h2>Posts</h2>
   <p :for={post <- @posts}>
     <em class="date"><%= post.date %></em>
-    <a href={post.path}> <%= post.title %> </a>
+    <a href={post.path}><%= post.title %></a>
+    <span class="tag" :for={tag <- post.tags}><%= tag %></span>
     <p><%= post.description %></p>
   </p>

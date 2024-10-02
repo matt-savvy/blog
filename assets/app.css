@@ -89,6 +89,13 @@ body {
     pre > code, a > code {
         background-color: inherit;
     }
+
+    .tag {
+        background-color: var(--snippet);
+        margin: 0rem 0.25rem;
+        padding: 0rem 0.25rem;
+    }
+
 }
 a {
     color: var(--keyword);
