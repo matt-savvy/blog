@@ -80,7 +80,7 @@ Things that are committed to don't ever seem to get followed up on, and no one q
 
 Or maybe it's more of an individual issue.
 You've got a lot of things on your plate, and a hundred more on deck.
-None of these are tracked anywhere, there's no way to get a sense of what you actual obligations are.
+None of these are tracked anywhere, there's no way to get a sense of what your actual obligations are.
 
 This haze of things on the to-do list follows you around and contributes to overall unease and inability to focus.
 
