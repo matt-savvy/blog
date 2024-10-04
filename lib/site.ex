@@ -4,6 +4,8 @@ defmodule Blog.Site do
 
   alias Phoenix.Template
 
+  alias Blog.Post
+
   embed_templates("templates/*")
 
   @assets_dir "./assets"
@@ -38,4 +40,7 @@ defmodule Blog.Site do
   def copy_assets do
     File.cp_r!(@assets_dir, Path.join([@output_dir, "assets"]))
   end
+
+  def page_title(%{ post: %Post{ title: title}}), do: title
+  def page_title(_assigns), do: "blog.1-800-rad-dude.com"
 end
