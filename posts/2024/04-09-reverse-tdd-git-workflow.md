@@ -66,7 +66,7 @@ If you made changes to your test while your changes were stashed, you might need
 
 And now you can continue the rest of your work, confident in your changes and your test.
 
-[![asciicast](https://asciinema.org/a/652953.svg)](https://asciinema.org/a/652953)
+<script src="https://asciinema.org/a/652953.js" id="asciicast-652953" async="true"></script>
 
 ## Scenario B - Changes Committed
 
@@ -122,7 +122,7 @@ git checkout -
 git stash pop
 ```
 
-[![asciicast](https://asciinema.org/a/652980.svg)](https://asciinema.org/a/652980)
+<script src="https://asciinema.org/a/652980.js" id="asciicast-652980" async="true"></script>
 
 ## Conclusion
 
