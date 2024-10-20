@@ -1,10 +1,22 @@
 %{
-  title: "Reverse-TDD Git Workflow",
+  title: "Reverse TDD Workflow | For When the Tests Weren't Written First",
   author: "Matt",
-  tags: ~w(git),
-  description: "A Git workflow for when you do TDD backwards."
+  tags: ~w(git tdd cheat-sheet),
+  description: "Because sometimes you need to test the test."
 }
 ---
+
+<iframe
+    class="embedded-yt"
+    src="https://www.youtube.com/embed/AtZ-hiTXmW0?rel=0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+>
+</iframe>
+
 
 TDD can be great, but no one follows it all of the time.
 In some cases, especially bug fixes, we'll have a lapse of discipline and simply go ahead and make the change.
