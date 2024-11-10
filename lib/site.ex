@@ -52,10 +52,16 @@ defmodule Blog.Site do
   def page_title(%{post: %Post{title: title}}), do: title
   def page_title(_assigns), do: "blog.1-800-rad-dude.com"
 
+  defp rss_date(%DateTime{} = dt) do
+    day_of_week = dt |> Date.day_of_week() |> day_str()
+    %{ day: day, month: month, year: year, hour: hour, minute: minute} = dt
+    "#{day_of_week}, #{pad(day)} #{month_str(month)} #{year} #{pad(hour)}:#{pad(minute)}"
+  end
+
   defp rss_date(%Date{} = date) do
-    day_of_week = date |> Date.day_of_week() |> day_str()
-    %{ day: day, month: month, year: year} = date
-    "#{day_of_week}, #{pad(day)} #{month_str(month)} #{year}"
+    date
+    |> DateTime.new!(Time.new!(0, 0, 0))
+    |> rss_date()
   end
 
   defp day_str(1), do: "Mon"

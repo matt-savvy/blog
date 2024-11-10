@@ -4,7 +4,7 @@
         <description>1-800-rad-dude.com Blog</description>
         <link>https://https://blog.1-800-rad-dude.com/</link>
         <language>en-us</language>
-        <lastBuildDate></lastBuildDate>
+        <lastBuildDate><%= rss_date(DateTime.utc_now()) %></lastBuildDate>
         <%= for post <- @posts do %>
         <item>
             <title><%= post.title %></title>
