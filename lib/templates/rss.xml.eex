@@ -5,14 +5,14 @@
         <description>1-800-rad-dude.com Blog</description>
         <link>https://https://blog.1-800-rad-dude.com/</link>
         <language>en-us</language>
-        <lastBuildDate><%= rss_date(DateTime.utc_now()) %></lastBuildDate>
+        <lastBuildDate><%= Blog.RSSDateTime.to_string(DateTime.utc_now()) %></lastBuildDate>
         <%= for post <- @posts do %>
         <item>
             <title><%= post.title %></title>
             <description><%= post.description %></description>
             <link>https://https://blog.1-800-rad-dude.com/<%= post.path %></link>
             <guid>https://https://blog.1-800-rad-dude.com/<%= post.path %></guid>
-            <pubDate><%= rss_date(post.date) %></pubDate>
+            <pubDate><%= Blog.RSSDateTime.to_string(post.date) %></pubDate>
         </item>
         <% end %>
     </channel>
