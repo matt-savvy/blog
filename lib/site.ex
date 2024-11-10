@@ -54,8 +54,8 @@ defmodule Blog.Site do
 
   defp rss_date(%DateTime{} = dt) do
     day_of_week = dt |> Date.day_of_week() |> day_str()
-    %{ day: day, month: month, year: year, hour: hour, minute: minute} = dt
-    "#{day_of_week}, #{pad(day)} #{month_str(month)} #{year} #{pad(hour)}:#{pad(minute)}"
+    %{day: day, month: month, year: year, hour: hour, minute: minute} = dt
+    "#{day_of_week}, #{pad(day)} #{month_str(month)} #{year} #{pad(hour)}:#{pad(minute)} GMT"
   end
 
   defp rss_date(%Date{} = date) do
