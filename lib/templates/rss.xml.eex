@@ -10,8 +10,8 @@
         <item>
             <title><%= post.title %></title>
             <description><%= post.description %></description>
-            <link>https://https://blog.1-800-rad-dude.com/<%= post.path %></link>
-            <guid>https://https://blog.1-800-rad-dude.com/<%= post.path %></guid>
+            <link>https://blog.1-800-rad-dude.com/<%= post.path %></link>
+            <guid>https://blog.1-800-rad-dude.com/<%= post.path %></guid>
             <pubDate><%= Blog.RSSDateTime.to_string(post.date) %></pubDate>
         </item>
         <% end %>
