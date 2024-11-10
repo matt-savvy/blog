@@ -10,6 +10,7 @@
             <title><%= post.title %></title>
             <description><%= post.description %></description>
             <link>https://https://blog.1-800-rad-dude.com/<%= post.path %></link>
+            <guid>https://https://blog.1-800-rad-dude.com/<%= post.path %></guid>
             <pubDate><%= rss_date(post.date) %></pubDate>
         </item>
         <% end %>
