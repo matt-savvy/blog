@@ -1,7 +1,7 @@
 %{
   title: "A Nix Cheatsheet",
   author: "Matt",
-  tags: ~w(nix),
+  tags: ~w(nix cheat-sheet),
   description: "A quick reference for some Nix know-how"
 }
 ---
