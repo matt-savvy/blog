@@ -1,5 +1,6 @@
 <header>
   <h1><%= @post.title %></h1>
+  <span class="tag" :for={tag <- @post.tags}><%= tag %></span>
   <p class="post-details">
     Posted on <%= DateTime.to_date(@post.datetime) %> by <%= @post.author %>.
   </p>
