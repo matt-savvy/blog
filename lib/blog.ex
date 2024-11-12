@@ -8,7 +8,7 @@ defmodule Blog do
     html_converter: Blog.HTMLConverter,
     earmark_options: %Earmark.Options{smartypants: false}
 
-  @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
+  @posts Enum.sort_by(@posts, & &1.datetime, {:desc, DateTime})
 
   def all_posts, do: @posts
 end
