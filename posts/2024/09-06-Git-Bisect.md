@@ -1,7 +1,7 @@
 %{
-  title: "Git Bisect | Automatically Find Your Bugs (Video and Cheat Sheet)",
+  title: "Git Bisect | Automatically Find Your Bugs",
   author: "Matt",
-  tags: ~w(git cheat-sheets),
+  tags: ~w(git cheat-sheets video),
   description: "Track down which commit introduced a bug so you can make sure it wasn't your fault. Spoiler: it was."
 }
 ---

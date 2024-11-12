@@ -1,7 +1,7 @@
 %{
-  title: "Crafting Perfect Commits In An Imperfect World (Video and Cheat Sheet)",
+  title: "Crafting Perfect Commits In An Imperfect World",
   author: "Matt",
-  tags: ~w(git cheat-sheets),
+  tags: ~w(git cheat-sheets video),
   description: "Your commits can be perfect even when your changes aren't."
 }
 ---

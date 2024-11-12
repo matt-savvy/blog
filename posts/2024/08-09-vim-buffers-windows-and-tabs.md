@@ -1,7 +1,7 @@
 %{
-  title: "Vim Buffers, Windows, and Tabs | Multi-file Workflows (Video and Cheat Sheet)",
+  title: "Vim Buffers, Windows, and Tabs | Multi-file Workflows",
   author: "Matt",
-  tags: ~w(vim cheat-sheets),
+  tags: ~w(vim cheat-sheets video),
   description: "Finally, windows you will want to use. See how I juggle buffers, work with windows, and how not to use tabs. "
 }
 ---

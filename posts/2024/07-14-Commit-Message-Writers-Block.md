@@ -1,7 +1,7 @@
 %{
-  title: "Commit Message Writer's Block? Here's the Cure (Video and Cheat Sheet)",
+  title: "Commit Message Writer's Block? Here's the Cure",
   author: "Matt",
-  tags: ~w(git cheat-sheet),
+  tags: ~w(git cheat-sheet video),
   description: "One crucial setting that should be in every git config."
 }
 ---

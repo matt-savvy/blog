@@ -1,7 +1,7 @@
 %{
-  title: "Grep In Vim | Setup from Scratch (Video and Cheat Sheet)",
+  title: "Grep In Vim | Setup from Scratch",
   author: "Matt",
-  tags: ~w(vim cheat-sheets),
+  tags: ~w(vim cheat-sheets video),
   description: "Grep from the ground up. We go from a stock install to dialed-in. "
 }
 ---

@@ -1,7 +1,7 @@
 %{
-  title: "Vim's Built-in Autocomplete is All You Need (Video and Cheat Sheet)",
+  title: "Vim's Built-in Autocomplete is All You Need",
   author: "Matt",
-  tags: ~w(vim cheat-sheets),
+  tags: ~w(vim cheat-sheets video),
   description: "Vim has autocomplete straight out of the box, and it's all you need."
 }
 ---

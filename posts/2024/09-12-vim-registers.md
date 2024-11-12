@@ -1,7 +1,7 @@
 %{
-  title: "Working With Vim Registers | Copy And Paste Better (Video and Cheat Sheet)",
+  title: "Working With Vim Registers | Copy And Paste Better",
   author: "Matt",
-  tags: ~w(vim cheat-sheets),
+  tags: ~w(vim cheat-sheets video),
   description: "Vim even lets you take copy and pasting code to another level."
 }
 ---

@@ -1,7 +1,7 @@
 %{
-  title: "Vim Search Must-Haves | 5 Things Everyone Should Know (Video and Cheat Sheet)",
+  title: "Vim Search Must-Haves | 5 Things Everyone Should Know",
   author: "Matt",
-  tags: ~w(vim cheat-sheets),
+  tags: ~w(vim cheat-sheets video),
   description: "Some search moves that should be muscle memory for everyone."
 }
 ---

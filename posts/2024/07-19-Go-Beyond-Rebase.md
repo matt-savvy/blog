@@ -1,7 +1,7 @@
 %{
-  title: "Go Beyond Rebase | git rebase --interactive (Video and Cheat Sheet)",
+  title: "Go Beyond Rebase | git rebase --interactive",
   author: "Matt",
-  tags: ~w(git cheat-sheets),
+  tags: ~w(git cheat-sheets video),
   description: "git rebase --interactive. Take it to another level. "
 }
 ---

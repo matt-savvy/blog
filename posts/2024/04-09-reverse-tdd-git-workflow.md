@@ -1,7 +1,7 @@
 %{
-  title: "Reverse TDD Workflow | For When the Tests Weren't Written First (Video and Cheat Sheet)",
+  title: "Reverse TDD Workflow | For When the Tests Weren't Written First",
   author: "Matt",
-  tags: ~w(git tdd cheat-sheet),
+  tags: ~w(git tdd cheat-sheet video),
   description: "Because sometimes you need to test the test."
 }
 ---

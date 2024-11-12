@@ -1,7 +1,7 @@
 %{
-  title: "More Than Switching Branches |  git checkout Does Everything (Video and Cheat Sheet)",
+  title: "More Than Switching Branches |  git checkout Does Everything",
   author: "Matt",
-  tags: ~w(git cheat-sheets),
+  tags: ~w(git cheat-sheets video),
   description: "checkout all these things you can do with this one command"
 }
 ---

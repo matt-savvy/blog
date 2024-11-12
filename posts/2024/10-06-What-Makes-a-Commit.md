@@ -1,7 +1,7 @@
 %{
   title: "What Makes a Commit? | Understanding Atomic Commits",
   author: "Matt",
-  tags: ~w(git),
+  tags: ~w(git video),
   description: "Answering the age old question \"What should I commit and when?\""
 }
 ---

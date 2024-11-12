@@ -1,7 +1,7 @@
 %{
-  title: "Vim Formatting Essentials (Video and Cheat Sheet)",
+  title: "Vim Formatting Essentials",
   author: "Matt",
-  tags: ~w(vim cheet-sheets),
+  tags: ~w(vim cheet-sheets video),
   description: "The three formatting operations I can't imagine life without."
 }
 ---
