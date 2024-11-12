@@ -7,6 +7,7 @@ defmodule Blog.Post do
     :description,
     :tags,
     :date,
+    :datetime,
     :path
   ]
   defstruct [
@@ -17,14 +18,17 @@ defmodule Blog.Post do
     :description,
     :tags,
     :date,
+    :datetime,
     :path
   ]
 
   def build(filename, attrs, body) do
     {path, date, id} = parse_filename(filename)
 
+    dt = DateTime.new!(date, ~T[00:00:00Z])
+
     attrs
-    |> Map.merge(%{id: id, date: date, body: body, path: path})
+    |> Map.merge(%{id: id, date: date, datetime: dt, body: body, path: path})
     |> then(&struct!(__MODULE__, &1))
   end
 
