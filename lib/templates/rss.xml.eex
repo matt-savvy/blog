@@ -12,7 +12,7 @@
             <description><%= post.description %></description>
             <link>https://blog.1-800-rad-dude.com/<%= post.path %></link>
             <guid>https://blog.1-800-rad-dude.com/<%= post.path %></guid>
-            <pubDate><%= Blog.RSSDateTime.to_string(post.date) %></pubDate>
+            <pubDate><%= Blog.RSSDateTime.to_string(post.datetime) %></pubDate>
         </item>
         <% end %>
     </channel>
