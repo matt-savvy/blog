@@ -12,12 +12,6 @@ defmodule Blog.RSSDateTime do
     "#{day_of_week}, #{pad(day)} #{month_str(month)} #{year} #{pad(hour)}:#{pad(minute)} GMT"
   end
 
-  def to_string(%Date{} = date) do
-    date
-    |> DateTime.new!(Time.new!(0, 0, 0))
-    |> __MODULE__.to_string()
-  end
-
   defp day_str(1), do: "Mon"
   defp day_str(2), do: "Tue"
   defp day_str(3), do: "Wed"
