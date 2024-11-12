@@ -6,7 +6,6 @@ defmodule Blog.Post do
     :body,
     :description,
     :tags,
-    :date,
     :datetime,
     :path
   ]
@@ -17,7 +16,6 @@ defmodule Blog.Post do
     :body,
     :description,
     :tags,
-    :date,
     :datetime,
     :path
   ]
@@ -28,7 +26,7 @@ defmodule Blog.Post do
     dt = DateTime.new!(date, ~T[00:00:00Z])
 
     attrs
-    |> Map.merge(%{id: id, date: date, datetime: dt, body: body, path: path})
+    |> Map.merge(%{id: id, datetime: dt, body: body, path: path})
     |> then(&struct!(__MODULE__, &1))
   end
 
