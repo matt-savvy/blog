@@ -119,3 +119,16 @@ a:visited {
   padding: 0 0 0 20px;
   background: url("feed-icon-14x14.png") no-repeat 0 50%;
 }
+
+.cheat-sheet-table {
+    table {
+        tr > td:first-child, tr > th:first-child {
+            text-align: end;
+            padding-right: 0.5rem;
+        }
+        tr > td:last-child, tr > th:last-child {
+            text-align: start;
+            padding-left: 0.5rem;
+        }
+    }
+}

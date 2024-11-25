@@ -1,0 +1,89 @@
+---- atl_case.md ----
+Here's some text in alternating case:
+
+> mOnGoDb iS WeBsCaLe!
+
+Put your cursor on "this" and use ciw to change inside the word to "it"
+
+---> Why do this?
+     Why do it?
+
+Put your cursor on "would" and use daw to delete a word. Hit "." to repeat.
+
+---> Why would you want to do this?
+     Why do this?
+
+Put your cursor on the second sentence and use cas to change the entire sentence.
+
+---> Why do this? Well, there are a few reasons. When someone writes something ...
+     Why do this? I can tell you. When someone writes something ...
+
+Or just use dap to delete the enitre paragraph.
+
+--> Why to do this? Well, there are a few reasons. When someone
+writes something that you think is ridiculous, you might want to repeat it back
+to them in this text style to mock them.
+
+---- alt_case.lua ----
+
+--[[
+    Use ci` below to change `input` to `str`.
+--> Converts `input` to alternating case, AKA "spongebob case".
+
+--> Use yi[ or yi] to yank everything inside square brackets.
+    Check what you yanked by using :reg "
+]]
+function alt_case(str)
+  local uppered = string.upper(str)
+  local lowered = string.lower(str)
+
+  local substrs = {}
+
+  for i=1, string.len(str) do
+    local is_even = i % 2 == 0
+    local source = is_even and uppered or lowered
+    substrs[#substrs+1] = string.sub(source, i, i)
+  end
+
+  local result = table.concat(substrs)
+
+  return result
+end
+
+-- use ca' below to change '?' to "!"
+extra = '?'
+-- use ci" to change "lorem ipsum dolor" to "hello world"
+result = alt_case("lorem ipsum dolor")
+
+-- use cib or ci( / ci) to change inside the parens to input_1
+result = alt_case("hello world" .. extra)
+
+-- use yi{ or yi} to yank inside the braces
+input_2 = table.concat({"whatever", "we" "want"})
+
+values = {"whatever", "we" "want"}
+i = #results
+-- use ci[ or ci] to change the square brackets to [i]
+values[#values + 1]
+
+-- use va{ or va} to select the outer braces
+phrases = {
+  "hello",
+  "goodbye",
+  -- move to the opening brace, then vi{ or vi} to select inside the inner braces
+  table.concat({"whatever", "we" "want"})
+}
+```
+
+---- section.html ----
+
+<section>
+    <!-- use ci< or ci> to change the img tag to a br tag -->
+    <img src="..." />
+    <!-- use da< or da> to delete the entire img tag -->
+    <img src="..." />
+    <!-- use cit to change the text inside the div tag -->
+    <div>TODO: add some text here...</div>
+    <!-- use dat to delete the entire div tag -->
+    <div>TODO: add some text here...</div>
+</section>
