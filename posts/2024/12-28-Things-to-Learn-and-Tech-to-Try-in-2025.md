@@ -2,11 +2,13 @@
   title: "Things to Learn and Tech to Try in 2025",
   author: "Matt",
   tags: ~w(),
-  description: "Things to focus on and tech to try next year."
+  description: "My personal list of things I'd like to give attention to in the coming year."
 }
+
 ---
 
 Now that we're in the last few days of 2024, it's a good time to take a step back and think about what we want to focus on in the next year.
+When it comes to programming and technology, this is my personal list of what I'd like to give attention to in 2025.
 
 ## Computer Systems / Computer Architecture
 
