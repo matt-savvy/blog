@@ -86,7 +86,7 @@ This book is attempting to fill that knowledge gap in our industry.
 *Write High-Performance, Scalable, and Reliable Apps with TCP and UDP*
 
 Network Programming has never been my speciality by any means.
-I know my way around handing client/server requests and responses, but I've never done anything at the level of parsing packets or picking protocols.
+I know my way around handling client/server requests and responses, but I've never done anything at the level of parsing packets or picking protocols.
 
 This book looks like a promising way to do some of that, in Elixir.
 
