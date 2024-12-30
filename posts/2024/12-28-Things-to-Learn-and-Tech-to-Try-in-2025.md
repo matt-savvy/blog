@@ -78,7 +78,7 @@ I see no reason to change that in 2025. As of right now, those three books are:
 *Navigate Each Stage of Software Delivery with Confidence*
 
 Our industry seems to know how to containerize an app that uses a shared-nothing architecture and then roll it out to a Kubernetes cluster, where the implication is that it could re-start or be scaled up or down on-demand.
-But part the selling point of running code on the BEAM is that you have the ability to start, re-start, and scale at the granularity of individual processes.
+But part of the selling point of running code on the BEAM is that you have the ability to start, re-start, and scale at the granularity of individual processes.
 What about any long-lived processes that are now getting mercilessly killed by your cluster auto-scaling?
 
 How are we supposed to use a modern DevOps approach without losing Elixir's special sauce along the way?
