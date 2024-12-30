@@ -100,6 +100,31 @@ At my day job, we use a lot of event sourcing, but I showed up after it was alre
 
 This book looks like it has a healthy balance of rules and theory as well as practical how-to knowledge.
 
+## YouTube / Content Creation
+
+This year I started a [YouTube Channel](https://www.youtube.com/@matt-savvy), which has (unsurprisingly) forced me to learn a few new tricks.
+I'd like to keep making videos in 2025, and I'd like to not only increase the quality but also spend less time on each video.
+Besides just getting better at communicating and creating clickbait titles and thumbnails, there's two main things I want to get better at.
+
+### [kdenlive](https://kdenlive.org/en/)
+
+I use kdenlive to edit videos.
+All I did was watch a quick overview and then jumped right in.
+I've done a little video editing in the past, so I have an idea of what I want to do, but it's not really my strong suit.
+When there's something specific I'm trying to accomplish, I usually will just take a minute and google it, and that's gotten me pretty far.
+
+Editing a video together is a pretty time-intensive part of the process, so I'm sure that taking some time to explore a little deeper here will pay off dividends in the long run.
+
+### [GIMP](https://www.gimp.org/)
+
+GIMP is what I use to make thumbnails and edit most other things that end up on screen.
+GIMP falls into the same boat, where I learned enough to accomplish the basics, and then I just google the specifics as they come up.
+In the past, I used to play with *legally acquired versions* of Paint Shop Pro and Photoshop, so I more or less know what it is that I'm trying to do.
+That being said, I'm constantly frustrated when using GIMP.
+I routinely end up clearing something that I don't mean to, or find that something has a different effect than what I expected.
+
+I feel like investing even a trivial amount of time learning GIMP will result in not only higher quality results in less time, but also a higher quality of life.
+
 ## How to Think About This Kind of List
 
 This time next year, will I be an expert on all these subjects?
