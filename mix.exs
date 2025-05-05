@@ -24,7 +24,7 @@ defmodule Blog.MixProject do
     [
       {:mdex, "~> 0.1.18"},
       {:nimble_publisher, "~> 1.0"},
-      {:phoenix_live_view, "~> 0.20"}
+      {:phoenix_live_view, "~> 1.0 "}
     ]
   end
 
