@@ -8,7 +8,8 @@
     inputs.flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = (import (inputs.nixpkgs) { inherit system; });
-      in {
+      in
+      {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
           ];
@@ -23,6 +24,8 @@
             '')
           ];
         };
+
+        formatter = pkgs.nixpkgs-fmt;
       }
     );
 }
