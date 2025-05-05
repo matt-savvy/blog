@@ -23,7 +23,7 @@ defmodule Blog.MixProject do
   defp deps do
     [
       {:mdex, "~> 0.1.18"},
-      {:nimble_publisher, "~> 1.0"},
+      {:nimble_publisher, "~> 1.1"},
       {:phoenix_live_view, "~> 1.0 "}
     ]
   end
