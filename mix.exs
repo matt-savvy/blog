@@ -22,7 +22,7 @@ defmodule Blog.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:mdex, "~> 0.1.18"},
+      {:mdex, "~> 0.6.1"},
       {:nimble_publisher, "~> 1.1"},
       {:phoenix_live_view, "~> 1.0 "}
     ]
