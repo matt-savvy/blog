@@ -14,7 +14,9 @@
           ];
           packages = with pkgs; [
             beam.packages.erlang_27.elixir_1_18
-            beam.packages.erlang_27.elixir-ls
+            (beam.packages.erlang_27.elixir-ls.override {
+              elixir = beam.packages.erlang_27.elixir_1_18;
+            })
             caddy
             (writeShellScriptBin "file-server" ''
               caddy file-server --listen :8000 --root ./output
