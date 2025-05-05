@@ -16,10 +16,9 @@ mix build
 ./watcher.sh
 ```
 
-Then, in another terminal, fire up a python server
+Then, in another terminal, fire up a caddy file server.
 ```
-cd output
-python3 -m http.server 8000
+caddy file-server --listen :8000 --root ./output
 ```
 
 
