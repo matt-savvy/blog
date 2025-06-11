@@ -19,6 +19,7 @@
               elixir = beam.packages.erlang_27.elixir_1_18;
             })
             caddy
+            inotify-tools
             (writeShellScriptBin "file-server" ''
               caddy file-server --listen :8000 --root ./output
             '')
