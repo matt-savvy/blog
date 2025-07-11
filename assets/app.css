@@ -31,6 +31,7 @@ h1, h2, h3, h4 {
 }
 
 pre {
+    padding: 0.5rem;
     margin-block-start: 0.5rem;
     margin-block-end: 1rem;
 }
