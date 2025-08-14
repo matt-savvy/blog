@@ -36,7 +36,7 @@ What we want to do is add a generated column and then an index on that column.
 
 ## The First Escape Hatch
 
-This is the first place where we reached outside of Ash.
+This is the first place where we reached outside of Ash.[^1]
 Since I knew exactly how I wanted to define the column and index, it was easy enough to just run `mix ecto.gen.migration` and write our migration in plain SQL using `execute`.
 
 Here, we're adding a generated column `search_vectors` that runs both our `title` and `body` (if one exists) through `to_tsvector`.
@@ -68,6 +68,10 @@ end
 
 Once we run this migration, each row in our `tasks` table will have a searchable representation of its text, and it will have an index so that we don't have to scan the whole table.
 
+[^1]: I learned later that this generated column and indexes could be added to my Resource using `custom_statements`, which will be used to generate the same migration.
+The benefit here is that they will be out in the open.
+
+
 ## Searching
 
 Now, we can actually search over this using a `tsquery`.
@@ -94,7 +98,7 @@ db=# select to_tsvector('write up a blog post about full text search')
 The most essential thing we want to do is be able to list only tasks that contain our search query in the title or body.
 We'll update our `list` action, which already accepts a map of filters, and if the map includes a `search_query`, we'll add a `filter` step.
 
-Ash doesn't have any built-in way to convert our search query into a `tsquery` or use the `@@` operator, but it does give us `fragment` as a way to drop down to the raw SQL we want.
+Ash doesn't have any built-in way to convert our search query into a `tsquery` or use the `@@` operator, but it does give us `fragment` as a way to drop down to the raw SQL we want [^2].
 
 ```elixir
 # lib/task_app/todo_tasks/todo_task.ex
@@ -105,6 +109,9 @@ query
 ...
 |> Ash.read()
 ```
+
+[^2]: I also learned later that I can define an `attribute` that won't get selected using `select_by_default?: false`.
+This allows me to use `fragment("ts_rank(?, websearch_to_tsquery(?))", search_vectors, ^arg(:search_query))` which will help query composition.
 
 ## Ranking Results
 
