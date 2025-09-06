@@ -14,8 +14,9 @@ body {
     /* mobile */
     @media (max-width: 600px) {
         font-size: medium;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5em 1em;
 
         pre {
             overflow-y: auto;
