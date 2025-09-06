@@ -16,6 +16,10 @@ body {
         font-size: medium;
         margin-left: 1em;
         margin-right: 1em;
+
+        pre {
+            overflow-y: auto;
+        }
     }
 
     min-height: 95vh;
