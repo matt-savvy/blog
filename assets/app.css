@@ -5,13 +5,17 @@ body {
         width: 80ch;
         margin-left: auto;
         margin-right: auto;
+
+        pre {
+            min-width: fit-content;
+        }
     }
 
     /* mobile */
     @media (max-width: 600px) {
         font-size: medium;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     min-height: 95vh;
