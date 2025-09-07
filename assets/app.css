@@ -15,19 +15,11 @@ body {
     /* desktop */
     @media (min-width: 600px) {
         font-size: medium;
-
-        pre {
-            min-width: fit-content;
-        }
     }
 
     /* mobile */
     @media (max-width: 600px) {
         font-size: medium;
-
-        pre {
-            overflow-y: auto;
-        }
     }
 
     min-height: 95vh;
@@ -74,6 +66,7 @@ pre {
     padding: 0.5rem;
     margin-block-start: 0.5rem;
     margin-block-end: 1rem;
+    overflow-y: auto;
 }
 
 img {
