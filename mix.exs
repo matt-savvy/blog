@@ -5,7 +5,7 @@ defmodule Blog.MixProject do
     [
       app: :blog,
       version: "0.1.0",
-      elixir: "~> 1.14",
+      elixir: "~> 1.19",
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
