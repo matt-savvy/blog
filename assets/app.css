@@ -3,6 +3,7 @@ html {
     margin-right: auto;
     max-width: 82ch;
     padding: 0.5em;
+    line-height: 1.5;
 }
 
 header {
