@@ -22,7 +22,7 @@ Entire books have been written about this, but my definition of quality comes do
 > High quality code is easy to understand, use, test, and most importantly, *change*.
 
 Imagine two codebases that do the exact same thing.
-They have have the same set of features, the same performance, and are equally reliable and secure.
+They have the same set of features, the same performance, and are equally reliable and secure.
 
 One is written in a high-level language, with comments and documentation, and is designed in a way so that it's easy to test.
 The other is just the equivalent assembly code.
@@ -137,7 +137,7 @@ It's harder to fix one thing without breaking others, it's harder to adapt and e
 
 If your customers can't count on you to fix existing problems without creating new ones, they're not going to be patient forever.
 They'll stop reporting bugs and simply take their business somewhere else.
-If you can't respond to their needs in a timely manner, they're going to to churn.
+If you can't respond to their needs in a timely manner, they're going to churn.
 If you can't react to increasing demands quickly, those demands might not still be there by the time you're ready for them.
 
 Even in a startup, low code quality can ruin your ability to pivot while trying to find Product-Market Fit.
